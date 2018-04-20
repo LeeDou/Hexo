@@ -36,3 +36,8 @@ $ hexo deploy
 ```
 
 More info: [Deployment](https://hexo.io/docs/deployment.html)
+
+
+### 配置自定义页面
+
+链接: [zhihu](https://www.zhihu.com/question/33324071)
