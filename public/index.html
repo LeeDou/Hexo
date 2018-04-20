@@ -43,7 +43,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="/assets/pe.png" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">kant lee</a></h1>
@@ -101,7 +101,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="/assets/pe.png" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">kant lee</h1>
@@ -152,19 +152,19 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="postname-新建文章" class="article article-type-postname  article-index" itemscope itemprop="blogPost">
+    <article id="postname-盒子模型" class="article article-type-postname  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/12/新建文章/">新建文章</a>
+      <a class="article-title" href="/2018/04/12/盒子模型/">盒子模型</a>
     </h1>
   
 
         
-        <a href="/2018/04/12/新建文章/" class="archive-article-date">
+        <a href="/2018/04/12/盒子模型/" class="archive-article-date">
   	<time datetime="2018-04-12T08:31:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-12</time>
 </a>
         
@@ -172,7 +172,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h3 id="盒子类型分为标准盒子模型和怪异盒子模型"><a href="#盒子类型分为标准盒子模型和怪异盒子模型" class="headerlink" title="盒子类型分为标准盒子模型和怪异盒子模型"></a>盒子类型分为标准盒子模型和怪异盒子模型</h3><ul>
+<li>标准盒子模型：标准来自于w3c标准议案提出，盒子width = width(content width) + padding + border + margin;</li>
+<li>怪异盒子模型：来与低版本得IE浏览器，不过随着前端的发展越来越多的人发现怪异模型的诸多优点，开始使用怪异模型，所以说怪异模型并不代表其优劣性，只关乎名称，在合适的场景我们也可以合适地选择怪异模型进行开发。 盒子width = width + margin; 内容width = contentwidth + border + padding;</li>
+</ul>
+<h3 id="盒子相互间的转换"><a href="#盒子相互间的转换" class="headerlink" title="盒子相互间的转换"></a>盒子相互间的转换</h3><ul>
+<li>box-sizing: content-box(css2宽高对应内容宽高)/border-box(宽高包含边框和内边距)/inherit/padding-box</li>
+<li>大多时候在进行移动端开发时，因为适配屏幕变化的原因，所以我们会将width设置为100%，此时若为元素加上padding，就会挤大盒子，故建议，在初始化时设置box-sizing为boder-box</li>
+</ul>
+
       
 
       
@@ -184,7 +192,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/12/新建文章/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/04/12/盒子模型/">展开全文 >></a>
         </p>
       
 
@@ -214,19 +222,19 @@
 
 
   
-    <article id="postname-测试blog" class="article article-type-postname  article-index" itemscope itemprop="blogPost">
+    <article id="postname-修改hexo头像" class="article article-type-postname  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/12/测试blog/">新建文章</a>
+      <a class="article-title" href="/2018/04/12/修改hexo头像/">修改Hexo头像</a>
     </h1>
   
 
         
-        <a href="/2018/04/12/测试blog/" class="archive-article-date">
+        <a href="/2018/04/12/修改hexo头像/" class="archive-article-date">
   	<time datetime="2018-04-12T08:31:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-12</time>
 </a>
         
@@ -234,7 +242,24 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h3 id="在source目录下新建文件夹"><a href="#在source目录下新建文件夹" class="headerlink" title="在source目录下新建文件夹"></a>在source目录下新建文件夹</h3><ul>
+<li>新建文件夹名称如： image/src等</li>
+</ul>
+<h3 id="选择头像"><a href="#选择头像" class="headerlink" title="选择头像"></a>选择头像</h3><ul>
+<li>下载一张自己喜欢的头像</li>
+<li>将头像放置在image目录下，命名为avatar.png</li>
+</ul>
+<h3 id="配置头像"><a href="#配置头像" class="headerlink" title="配置头像"></a>配置头像</h3><ul>
+<li>在themes下找到你选择的主题，如yilia</li>
+<li>打开配置文件_config.yml, 查找<blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 你的头像url</span><br><span class="line">avatar: /image/avatar.png(更改图片地址)</span><br></pre></td></tr></table></figure>
+</blockquote>
+</li>
+</ul>
+<h3 id="finally"><a href="#finally" class="headerlink" title="finally"></a>finally</h3><ul>
+<li>重新部署上传即可<br><code>hexo d -g</code></li>
+</ul>
+
       
 
       
@@ -257,7 +282,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/12/测试blog/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/04/12/修改hexo头像/">展开全文 >></a>
         </p>
       
 
