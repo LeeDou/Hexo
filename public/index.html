@@ -182,6 +182,157 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="w-重开" class="article article-type-w  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/19/重开/">重开</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/19/重开/" class="archive-article-date">
+  	<time datetime="2018-07-19T07:36:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-19</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="重新开始"><a href="#重新开始" class="headerlink" title="重新开始"></a>重新开始</h3>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/19/重开/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="postname-Proxy-1" class="article article-type-postname  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/19/Proxy-1/">Proxy</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/19/Proxy-1/" class="archive-article-date">
+  	<time datetime="2018-07-19T07:05:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-19</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="Proxy"><a href="#Proxy" class="headerlink" title="Proxy"></a>Proxy</h3><p> Proxy用于修改某些操作的默认行为，等同于在语言层面做出修改，所以属于一种“元编程”（meta programming），即对编程语言进行编程。<br> Proxy 可以理解为在目标对象前假设一层“拦截”层，外界对改对象的访问必须想通过该层的拦截，因此提供了一种机制，可以对外界的访问<br> 进行过滤和改写。      </p>
+<pre><code>var obj = new Proxy({}, {
+  get: function(target, key, receiver) {
+    console.log(`getting ${kkey}`);
+    return Reflect.get(target, key, receiver);
+  },
+  set: function(target, key, value, receiver) {
+    return Reflect.set(target, key, value, receiver);
+  }
+})
+
+// 对一个空对象做了一层拦截，重定义了属性的读（get）和设置（set）行为
+</code></pre><p>ES6 原生提供了Proxy的构造函数，用于生成Proxy实例。<br><code>var proxy = new Proxy(target, handler)</code>  </p>
+<blockquote>
+<p>参数target表示要拦截的目标对象，handler也是一个对象，用来定制拦截行为。  </p>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/文章//" class="article-tag-list-link color3">文章</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/19/Proxy-1/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-cat" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -202,7 +353,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>随笔</p>
+
       
 
       
